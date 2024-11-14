@@ -8,6 +8,7 @@ import {
   useReverseGeoCodeQuery,
   useWeatherQuery,
 } from "../hooks/useWeather";
+import CurrentWeather from "./CurrentWeather";
 
 const Dashboard = () => {
   const {
@@ -98,6 +99,18 @@ const Dashboard = () => {
             }`}
           />
         </Button>
+      </div>
+      <div>
+        <div className="grid gap-6">
+         <CurrentWeather
+         data={weatherQuery?.data}
+         locationName={locationName}
+         />         
+        </div>
+        <div>
+          {/* details  */}
+          {/* forcast  */}
+        </div>
       </div>
     </section>
   );
