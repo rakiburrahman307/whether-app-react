@@ -12,6 +12,7 @@ import CurrentWeather from "./CurrentWeather";
 import HourlyTemperature from "./HourlyTemperature";
 import WeatherDetails from "./WeatherDetails";
 import WeatherForecast from "./WeatherForecast";
+import FavoriteCities from "./FavoriteCities";
 
 const Dashboard = () => {
   const {
@@ -88,6 +89,7 @@ const Dashboard = () => {
   }
   return (
     <section className='space-y-4'>
+      <FavoriteCities />
       <div className='flex items-center justify-between'>
         <h1 className='text-xl font-bold tracking-tight'>My Location</h1>
         <Button
@@ -103,25 +105,19 @@ const Dashboard = () => {
           />
         </Button>
       </div>
-      <div className="grid gap-6">
-        <div className="flex flex-col lg:flex-row gap-4">
-         <CurrentWeather
-         data={weatherQuery?.data}
-         locationName={locationName}
-         />   
-         <HourlyTemperature
-         data={forecastQuery?.data}
-         />      
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 items-start">
-          {/* details  */}
-          <WeatherDetails 
-          data={weatherQuery?.data}
+      <div className='grid gap-6'>
+        <div className='flex flex-col lg:flex-row gap-4'>
+          <CurrentWeather
+            data={weatherQuery?.data}
+            locationName={locationName}
           />
+          <HourlyTemperature data={forecastQuery?.data} />
+        </div>
+        <div className='grid gap-6 md:grid-cols-2 items-start'>
+          {/* details  */}
+          <WeatherDetails data={weatherQuery?.data} />
           {/* forecast  */}
-            <WeatherForecast 
-            data={forecastQuery?.data}
-            />
+          <WeatherForecast data={forecastQuery?.data} />
         </div>
       </div>
     </section>
