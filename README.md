@@ -57,7 +57,7 @@ Developed with passion by **[Md. Rakibur Rahman]** ✨🎨🚀
 - [GitHub](https://github.com/rakiburrahman307)
 - [LinkedIn](https://www.linkedin.com/in/md-rakibur-rahman-14b33a2a4/)
 - [Email Me](mailto:rakiburrahman307@gmail.com)
-- [Live Demo](https://product-list-with-cart-challange.netlify.app/)
+- [Live Demo](https://sky-snap-weather-app.netlify.app/)
 
 ## Additional Resources
 
