@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Sky Snap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for Sky Snap](./src/assets/preview.JPG)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thanks for exploring **Sky Snap**, a feature-rich and modern weather web application.
 
-## Expanding the ESLint configuration
+This project offers an intuitive interface to fetch and display weather data with visual insights, ensuring a seamless user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Table of Contents
 
-- Configure the top-level `parserOptions` property like this:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Attributions](#attributions)
+- [Additional Resources](#additional-resources)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Overview
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**Sky Snap** is a weather application built with modern technologies and best practices. It uses OpenWeatherAPI to fetch real-time weather data and Recharts for data visualization.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Key Highlights:
+- Provides detailed weather information including temperature, humidity, wind speed, and more.
+- Beautiful and responsive design suitable for light and dark themes.
+- Interactive charts to visualize weather trends.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Features
+
+- **Live Weather Updates:** Get current weather information instantly.
+- **Interactive Charts:** Visualize temperature and weather data using Recharts.
+- **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+- **Dark and Light Modes:** Enjoy the app in your preferred theme.
+- **Fast and Reliable:** Built using cutting-edge technologies like React Query (TanStack Query) for seamless data fetching.
+
+## Technologies Used
+
+- **React (with TypeScript)**
+- **Chakra UI**
+- **Tailwind CSS**
+- **React Query (TanStack Query)**
+- **OpenWeatherAPI**
+- **Recharts**
+
+## Usage
+
+1. Clone this repository to your local machine.
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Access the app in your browser at `http://localhost:3000`.
+
+## Attributions
+
+Developed with passion by **[Your Name]** ✨🎨🚀
+
+- [GitHub](https://github.com/rakiburrahman307)
+- [LinkedIn](https://www.linkedin.com/in/md-rakibur-rahman-14b33a2a4/)
+- [Email Me](mailto:rakiburrahman307@gmail.com)
+- [Live Demo](https://product-list-with-cart-challange.netlify.app/)
+
+## Additional Resources
+
+- [OpenWeatherAPI Documentation](https://openweathermap.org/api)
+- [Recharts Documentation](https://recharts.org/en-US/)
+- [React Query Documentation](https://tanstack.com/query/latest)
+
+Happy Coding! 🚀

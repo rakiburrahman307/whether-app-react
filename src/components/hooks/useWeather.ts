@@ -38,6 +38,6 @@ export const useSearchLocationQuery = (query: string) => {
   return useQuery({
     queryKey: WEATHER_KEYS.query(query),
     queryFn: () => weatherApi.searchLocation(query),
-    enabled: query.length > 3,
+    enabled: query.length > 2,
   });
 };

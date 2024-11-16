@@ -1,7 +1,7 @@
 {
-  "name": "whether-app",
+  "name": "sky-snap",
   "private": true,
-  "version": "0.0.0",
+  "version": "22.11.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

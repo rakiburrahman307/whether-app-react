@@ -12,14 +12,14 @@ const Header = () => {
       <div className='container mx-auto flex h-16 items-center justify-between px-4'>
         <Link to={`/`}>
           <img
-            src={isDark ? "logo.png" : "logo2.png"}
-            alt='klimate logo'
-            className='h-14'
+            src='logo.png'
+            alt='SkySnap logo'
+            className='h-24 md:h-28 mt-4'
           />
         </Link>
-        <div className="flex gap-4">
+        <div className='flex gap-4'>
           {/* search  */}
-          <CitySearch/>
+          <CitySearch />
           {/* theme toggle  */}
           <div
             onClick={() => setTheme(isDark ? "light" : "dark")}
