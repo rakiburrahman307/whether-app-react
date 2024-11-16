@@ -52,7 +52,7 @@ This project offers an intuitive interface to fetch and display weather data wit
 
 ## Attributions
 
-Developed with passion by **[Your Name]** ✨🎨🚀
+Developed with passion by **[Md. Rakibur Rahman]** ✨🎨🚀
 
 - [GitHub](https://github.com/rakiburrahman307)
 - [LinkedIn](https://www.linkedin.com/in/md-rakibur-rahman-14b33a2a4/)
